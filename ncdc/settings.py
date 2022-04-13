@@ -29,7 +29,6 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-CORS_ORIGIN_ALLOW_ALL = False
 
 
 INSTALLED_APPS = [
@@ -54,6 +53,10 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'corsheaders.middleware.CorsMiddleware',
 ]
+
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = True
+
 
 
 ROOT_URLCONF = 'ncdc.urls'
